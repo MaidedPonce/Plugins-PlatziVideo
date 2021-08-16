@@ -4,8 +4,15 @@
   "description": "Proyecto del Curso Profesional de JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "author": "Maided Ponce",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.4",
+    "typescript": "^4.3.5"
+  },
+  "browserslist": [
+    "last 1 Firefox version"
+  ]
 }
