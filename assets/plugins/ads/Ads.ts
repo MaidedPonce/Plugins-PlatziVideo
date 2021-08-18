@@ -8,75 +8,37 @@ export interface Ad {
 const ALL_ADS: Ad[] = [
   {
     imageUrl:
-      'https://static.platzi.com/media/achievements/badge-profesional-javascript-13538df2-24ce-433f-9aa6-e34eed608e70.png',
-    title: 'Curso Profesional de JavaScript',
+      'https://i1.wp.com/polvora.com.mx/wp-content/uploads/2021/03/28184775-B7B0-41C7-9DF8-70F333FEA5C4.jpeg?resize=696%2C464&ssl=1',
+    title: 'Black Veil Brides',
     body:
-      'Mejora tus habilidades en Javascript. Conoce Typescript y cómo puedes ocuparlo para mejorar el control de tus variables.',
-    url: 'https://platzi.com/cursos/javascript-profesional/',
+      'Escucha ahora: Torch',
+    url: 'https://www.youtube.com/watch?v=qyhJ7MRBOyo',
   },
 
   {
     imageUrl:
-      'https://static.platzi.com/media/achievements/badge-frontend-developer-8a49e681-3e22-408d-b886-2f47dfc9953a.png',
-    title: 'Curso de Frontend Developer',
+      'https://i2.wp.com/polvora.com.mx/wp-content/uploads/2018/09/palaye_royale.jpg?resize=696%2C449&ssl=1',
+    title: 'Palaye Royale',
     body:
-      'Domina las bases de HTML y CSS. Define la arquitectura de tu código y construye un sitio web usando componentes estáticos. ',
-    url: 'https://platzi.com/cursos/frontend-developer/',
+      'Escucha ahora: No Love In LA',
+    url: 'https://www.youtube.com/watch?v=qePhiiz7dtc',
   },
 
   {
     imageUrl:
-      'https://static.platzi.com/media/achievements/badge-backend-node-8e6aa8a9-f7cd-42b7-bf4a-e1ee916a942b.png',
-    title: 'Curso de Backend con Node.js',
+      'https://www.thebackstage.net/wp-content/uploads/2021/06/Sleeping-With-Sirens-1160x695.jpg',
+    title: 'Sleeping With Sirens',
     body:
-      'Crea aplicaciones backend utilizando Node.js, Express y Mongo. Entiende cómo funciona Javascript en un servidor y escribe aplicaciones con Node.js.',
-    url: 'https://platzi.com/cursos/backend-nodejs/',
+      'Escucha ahora: Bloody Knuckles',
+    url: 'https://www.youtube.com/watch?v=Dr93IjkUatI',
   },
-
   {
     imageUrl:
-      'https://static.platzi.com/media/achievements/badge-prework-da6b0493-9908-40f3-ad53-f5d330b995b8.png',
-    title:
-      'Comienza tus proyectos de desarrollo para JavaScript configurando un entorno de desarrollo cómodo y adaptado a tus necesidades.',
+      'https://photos.bandsintown.com/thumb/11373202.jpeg',
+    title: 'Motionless In White',
     body:
-      'Mejora tus habilidades en Javascript. Conoce Typescript y cómo puedes ocuparlo para mejorar el control de tus variables.',
-    url: 'https://platzi.com/cursos/prework/',
-  },
-
-  {
-    imageUrl:
-      'https://static.platzi.com/media/achievements/badge-autenticacion-passport-6d45426a-2b24-4757-8927-7bfaf54529dd.png',
-    title: 'Curso de Autenticación con Passport.js',
-    body:
-      'Genera estrategias de autenticación Sign-In y Sign-Out usando Passport.js. Agrega autenticación con Facebook, Twitter y Google a tus desarrollos.',
-    url: 'https://platzi.com/cursos/passport/',
-  },
-
-  {
-    imageUrl:
-      'https://static.platzi.com/media/achievements/badge-backend-frontend-02b2ac18-331a-4959-85bf-0bd3c2aa009c.png',
-    title: 'Curso de Backend for Frontend',
-    body:
-      'La ingeniería de software evoluciona día a día, no te quedes atrás. Ahora que eres un Desarrollador FullStack JavaScript necesitas evolucionar con el software, construye arquitecturas de software modernas.',
-    url: 'https://platzi.com/cursos/bff/',
-  },
-
-  {
-    imageUrl:
-      'https://static.platzi.com/media/achievements/badge-react-adec89d0-1c35-4c9c-847e-18c284dc79dd.png',
-    title: 'Curso Práctico de React JS',
-    body:
-      'React es una de las librerías más utilizadas hoy para crear aplicaciones web. Aprende a través de la creación de la interfaz de PlatziVideo todo lo que necesitas para crear increíbles componentes con React.      ',
-    url: 'https://platzi.com/cursos/react-ejs/',
-  },
-
-  {
-    imageUrl:
-      'https://static.platzi.com/media/achievements/badge-react-redux-2ca3c0a5-fc53-437f-bfba-69e9ddd5a803.png',
-    title: 'Curso de React Router y Redux',
-    body:
-      'Aprende de forma práctica a implementar React Router para manejar rutas en tus proyectos de frontend como un profesional.',
-    url: 'https://platzi.com/cursos/react-router-redux/',
+      'Escucha ahora: Thoughts And Prayers',
+    url: 'https://www.youtube.com/watch?v=yPe180bxVuE',
   },
 ];
 
