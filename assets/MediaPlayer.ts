@@ -1,68 +1,67 @@
 class MediaPlayer {
-    media: HTMLMediaElement;
-    plugins: Array<any>
-    constructor(config) {
-        this.media = config.el;
-        this.plugins = config.plugins || [];
+  media: HTMLMediaElement;
+  plugins: Array<any>;
+  container: HTMLElement;
 
-        this.initPlugins();
-    }
-    private initPlugins() {
-        /* const player = {
-            play: () => this.play(),
-            pause: () => this.pause(),
-            media: this.media,
-            get muted() {
-                return this.media.muted;
-            },
+  constructor(config) {
+    this.media = config.el;
+    this.plugins = config.plugins || [];
+    this.initPlayer();
+    this.initPlugins();
+  }
 
-            set muted(value) {
-                this.media.muted = value;
-                /* if (value === true) {
-                    this.media.muted = true;
-                } else {
-                    this.media.muted = false;
-                } 
-            }
-        }; */
-        this.plugins.forEach(plugin => {
-            // plugin.run(this);
-            plugin.run(this);
-        });
+  initPlayer() {
+    this.container = document.createElement('div');
+    this.container.style.position = 'relative';
+    this.media.parentNode.insertBefore(this.container, this.media);
+    this.container.appendChild(this.media);
+  }
+
+  private initPlugins() {
+    this.plugins.forEach(plugin => {
+      plugin.run(this);
+    });
+  }
+
+  play() {
+    this.media.play();
+  }
+
+  pause() {
+    this.media.pause();
+  }
+
+  togglePlay() {
+    if (this.media.paused) {
+      this.play();
+    } else {
+      this.pause();
     }
-    play() {
-        this.media.play();
-    }
-    pause() {
-        this.media.pause();
-    }
-    mute() {
-        this.media.muted = true;
-    }
-    unmute() {
-        this.media.muted = false;
-    }
-    muteOrMute() {
+  }
+   /*  muteOrMute() {
         if (this.media.muted == true) {
             this.unmute();
         } else {
             this.mute();
         }
+    } */
+
+    muteOrMute() {
+      if (this.media.muted) {
+        this.unmute();
+      } else {
+        this.mute();
+      }
     }
-    toggle() {
-        if (this.media.paused) {
-            this.play();
-        } else {
-            this.pause();
-        }
+
+    mute() {
+      this.media.muted = true;
     }
-}
-
-
-
-
-
-
-
-
-export default MediaPlayer;
+  
+    unmute() {
+      this.media.muted = false;
+    }
+    
+  }
+  
+  export default MediaPlayer;
